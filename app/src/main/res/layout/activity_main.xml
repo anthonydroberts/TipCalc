@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tonydroberts.tipcalc.MainActivity">
+
+
+        <TextView android:id="@+id/bill_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/bill_title"
+            />
+
+        <EditText
+            android:id="@+id/bill"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_title"
+            android:hint="@string/bill_hint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+
+        <TextView android:id="@+id/tip_percent_title"
+            android:layout_below="@id/bill"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tip_title"
+            />
+
+        <Button android:id="@+id/button_down"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_down"
+            android:textColor="@color/blue"
+            android:layout_above="@+id/display_tip_title"
+            android:layout_toLeftOf="@+id/tip_percent"
+            android:layout_toStartOf="@+id/tip_percent"
+            android:onClick="buttonDown"/>
+
+        <EditText android:id="@+id/tip_percent"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/default_tip"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tip_percent_title"
+            android:layout_centerHorizontal="true" />
+
+        <Button android:id="@+id/button_up"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_up"
+            android:textColor="@color/blue"
+            android:layout_above="@+id/display_tip_title"
+            android:layout_toRightOf="@+id/tip_percent"
+            android:layout_toEndOf="@+id/tip_percent"
+            android:onClick="buttonUp" />
+
+        <TextView android:id="@+id/display_tip_title"
+            android:layout_below="@id/tip_percent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/display_tip_title"
+            />
+
+        <TextView android:id="@+id/display_tip"
+            android:layout_below="@id/display_tip_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/moneyGreen"
+            />
+
+        <TextView android:id="@+id/display_total_title"
+            android:layout_below="@id/display_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/display_total_title"
+            />
+
+        <TextView android:id="@+id/display_total"
+            android:layout_below="@id/display_total_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/moneyGreen"
+            />
+    </RelativeLayout>

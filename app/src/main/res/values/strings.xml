@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TipCalc by A. Roberts</string>
+    <string name="bill_title">Bill</string>
+    <string name="bill_hint">Enter Bill Amount</string>
+    <string name="tip_title">Tip Percentage</string>
+    <string name="default_tip">15.00</string>
+    <string name="button_down">-</string>
+    <string name="button_up">+</string>
+    <string name="display_tip_title">Tip Amount</string>
+    <string name="display_total_title">Total</string>
+</resources>
